@@ -70,4 +70,6 @@ def delete_files(input_path, pdf_path):
     os.remove(pdf_path)
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    # app.run(debug=False)
+    http_server = WSGIServer(('0.0.0.0', 5000), app)
+    http_server.serve_forever()
