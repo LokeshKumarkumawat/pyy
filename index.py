@@ -47,4 +47,4 @@ def convert_to_pdf(input_path):
     presentation.Dispose()
 
 if __name__ == '__main__':
-    app.run(debug=false,host='0.0.0.0')
+    app.run()#(debug=False,host='0.0.0.0')
